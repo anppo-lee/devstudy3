@@ -26,7 +26,7 @@ resource "aws_instance" "app_server" {
   ami           = "ami-0c4f7023847b90238"
   instance_type = "t2.micro"
   
-  security_group = ["allow_ssh"]
+  security_groups = ["allow_ssh"]
   
   tags = {
     Name = "ExampleAppServerInstance"
